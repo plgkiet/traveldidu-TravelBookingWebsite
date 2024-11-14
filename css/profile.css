@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+div#logo {
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    left: 50px;
+}
+
+#navandlogo {
+    display: flex;
+    align-items: center;
+}
+
+
+nav {
+    position: relative;
+    top: 0px;
+    display: flex;
+    /* left: 50px; */
+    justify-content: center;
+}
+
+nav #mainservice {
+    text-decoration: none;
+    display: flex;
+    padding: 5px;
+    width: 220px;
+    margin-top: 5px;
+    border: 1px solid black;
+    color: black;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 70px;
+    display: inline-block;
+}
+
+nav #mainservice a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav #otherservice a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+nav #mainservice a:hover {
+    color: #FFCC33;
+    /* background-color: #EEE9E9;  */
+    border-radius: 100px;
+}
+
+nav #otherservice a:hover {
+    color: #FFCC33;
+}
+
+nav button {
+    justify-content: center;
+    margin: 0 30px;
+}
+
+nav .signin {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #FFCC33;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+nav .signin:hover {
+    padding: 10px;
+    background-color: #FFCC33;
+    color: #ffffff;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+nav .signup {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #FFCC33;
+    text-decoration: none;
+    border: 1px solid #FFCC33;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+nav .signup:hover {
+    padding: 10px;
+    background-color: #FFCC33;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    transform: scale(0.9);
+}
+
+#otherservice .dropdown-menu {
+    padding: 10px;
+}
+
+#otherservice .dropdown-item.product {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#otherservice .dropdown-item.product:hover {
+    color: #FFCC33;
+    transform: scale(1.1);
+}
+
+#otherservice .dropdown-item.option {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/******sidebar************/
+
+.profile-container {
+    margin-top: 0px;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    border:1px solid #555;
+    padding: 10px;
+    height: auto;
+    width: 400px;
+    /* border-radius: 100px; */
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1em;
+    display: block;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+.sidebar ul li a:hover {
+    color: #FFCC33;
+}
+/******content************/
+.main-content {
+    padding: 30px;
+}
+.section {
+    margin-bottom: 30px;
+}
+
+th {
+    width: 200px;
+}
+
+.detail {
+    width: 550px;
+}
+
+.section {
+    margin-left: 20px;
+}
+
+.section h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-item label {
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-item input {
+    width: 550px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #FFCC33;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: white;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    transform: scale(0.9);
+    text-decoration: none;
+    color: white;
+    background-color: #0e1824;
+}
+
+.section #update-button {
+    background-color: #FFCC33;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: white;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.section #update-button:hover {
+    transform: scale(0.9);
+    text-decoration: none;
+    color: white;
+    background-color: #0e1824;
+}
+
+.section #edit-button {
+    background-color: #FFCC33;
+    margin-left: 300px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: white;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+.section #edit-button:hover {
+    transform: scale(0.9);
+    text-decoration: none;
+    color: white;
+    background-color: #0e1824;
+}
